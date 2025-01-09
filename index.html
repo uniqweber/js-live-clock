@@ -7,9 +7,28 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 class="text-red-600 text-3xl">Digital clock</h1>
-    <div class="">
-
+    <div class="min-h-screen mx-auto bg-gray-300 p-10">
+      <div class="max-w-screen-2xl mx-auto space-y-10">
+        <div class="p-20 border bg-gray-100 w-full">
+          <h2 class="text-red-600 text-3xl">Digital clock</h2>
+          <div class="inline-block relative">
+            <h1 id="time" class="text-9xl -ml-1 mt-1">
+              <span id="hours">00</span>:<span id="minutes">00</span>:<span
+                id="seconds"
+                >00</span
+              >
+            </h1>
+            <span id="am-pm" class="absolute text-3xl -right-12 top-3">AM</span>
+          </div>
+        </div>
+        <div class="p-20 border bg-gray-100 w-full">
+          <h2 class="text-red-600 text-3xl">Analog Clock</h2>
+          <h1 id="time" class="text-9xl -ml-1 mt-1">01:00:32</h1>
+        </div>
+      </div>
     </div>
+
+    <!-- script -->
+    <script src="clockTime.js"></script>
   </body>
 </html>
